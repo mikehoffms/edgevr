@@ -1,14 +1,31 @@
-# Project
+# VR Blog
+This is a [Jekyll](https://jekyllrb.com/) blog based off the [Chripy Theme](https://chirpy.cotes.info/). Generally speaking updating is as simple as adding a new markdown file to the post directory.  Github actions will automatically generate the site content and publish as needed when code is commited to master. The instructions below are to setup locally and view site content. 
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Git on Windows will add line feeds <LF> to the scripts and break the github actions so be mindfull of that. 
 
-As the maintainer of this project, please make a few updates:
+## Local setup
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+**use WSL or Linux** 
+
+Although you can develop on Windows most of the scripts are written for linux and simply don't play well on Windows at the moment. 
+
+Install required packages 
+
+```console
+$ sudo apt install ruby-dev coreutils fswatch zlib1g-dev build-essential 
+````
+
+Install all the ruby stuff 
+```console
+$ bundle install
+```
+
+Run the site locally 
+```console
+$ bash tools/run.sh
+```
+
+After you're done making changes push to the repo. All publishing is automated via Github Actions so you don't have to worry about that part. Code in the master branch will be generated into a site which is moved to the gh-pages branch which is used for publishing. 
 
 ## Contributing
 
