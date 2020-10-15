@@ -11,9 +11,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	{% if page.image %}
-	<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+	<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
 	{% else %}
-	<meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}">
+	<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.avatar }}">
 	{% endif %}
 
   <title>
