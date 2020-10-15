@@ -10,6 +10,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	{% if page.image %}
+	<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+	{% else %}
+	<meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}">
+	{% endif %}
+
   <title>
   {%- unless page.layout == "home" -%}
     {{ page.title | append: " | "}}
