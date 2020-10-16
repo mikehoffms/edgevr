@@ -27,6 +27,11 @@ layout: default
           {% else %}
             {{ site.author }}
           {% endif %}
+          {% if page.author_twitter %}
+          <a href="https://twitter.com/{{ page.author_twitter}}" title="Author's Twitter" target="_blank">
+            <i class="fa-fw fab fa-twitter"></i>
+          </a>
+          {% endif %}
           </span>
         </div>
 
