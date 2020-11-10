@@ -1,7 +1,7 @@
 ---
 title: Deep Dive into Site Isolation (Part 1)
 author: Jun Kokatsu
-date: 2020-11-10 10:00:00 -0700
+date: 2020-11-10 10:00:00 -0800
 categories: [Vulnerabilities]
 tags: [Site Isolation]
 math: true
