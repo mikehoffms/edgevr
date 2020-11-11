@@ -47,7 +47,7 @@ Let's discuss the first two message handlers as a pair. These are the handlers t
 </div>
 
 
-Unlike the desktop version of Chromium, where objects like the `RenderFrameHost` are tightly coupled with the lifetime of frames, the lifetime of the `WebFrameImpl` objects are completely controlled by JavaScript. If a webpage is randomly calling `FrameBecomeAvailable` or `FrameBecomeUnavailable` a frame may not have a corresponding `WebFrameImpl` object or it may have ten. I will mention that I have not noticed any memory safety issues caused by this API being exposed and usable in this way.
+Unlike the desktop version of Chromium, where objects like the `RenderFrameHost` are tightly coupled with the lifetime of frames, the lifetime of the `WebFrameImpl` objects are completely controlled by JavaScript. If a webpage is randomly calling `FrameBecameAvailable` or `FrameBecameUnavailable`, a frame may not have a corresponding `WebFrameImpl` object or it may have ten. I will mention that I have not noticed any memory safety issues caused by this API being exposed and usable in this way.
 
 These handlers are normally invoked through the code in the [//ios/web/js_message/resources](https://source.chromium.org/chromium/chromium/src/+/master:ios/web/js_messaging/resources/) directory.
 
@@ -64,7 +64,7 @@ window.webkit.messageHandlers.FrameBecameAvailable.postMessage({
 To destroy a `WebFrameImpl` object the following snippet will suffice.
 
 ```javascript
-window.webkit.messageHandlers.FrameBecomeUnavailable.postMessage("a8ffcfb8a97236ee42bff55184584ba8")
+window.webkit.messageHandlers.FrameBecameUnavailable.postMessage("a8ffcfb8a97236ee42bff55184584ba8")
 ```
 
 In the snippet above, the only thing needed to destroy a frame's `WebFrameImpl` object is its identifier. These identifiers, with the exception of the main frame's, are not secret.
