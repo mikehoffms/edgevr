@@ -84,9 +84,10 @@ $sidebar-display: "sidebar-display";
 
   .site-title {
     text-align: center;
+    word-spacing: 1000px !important;
     a {
       // color: var(--site-title-color);
-      font-weight: 900;
+      font-weight: 500;
       font-size: 1.5rem;
       letter-spacing: .5px;
       &:hover {
