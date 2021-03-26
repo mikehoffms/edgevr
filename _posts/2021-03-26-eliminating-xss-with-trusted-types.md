@@ -264,7 +264,7 @@ table.appendChild(tbody);
 document.body.appendChild(table);
 ```
 
-The conversion increases the amount of code and makes the code less readable, even though it's definitely a safe string.
+The conversion increases the amount of code and makes the code less readable, even though it's definitely a safe HTML.
 
 Therefore, I believe that such a Trusted Type policy can be simplified or removed, if we can guarantee that those won't cause an XSS. Thankfully, [Sanitizer API](https://github.com/WICG/sanitizer-api/) aims to expose an ever-green XSS free sanitizer natively in the browsers. We are involved in the discussion of Sanitizer API so that it'll integrate well with Trusted Types, and hopefully reduce the necessity of Trusted Type policy creation to minimal. This will reduce both time and amount of coding required for developers, and security code audit required for new Trusted Type policy.
 
