@@ -158,7 +158,7 @@ const escapeHTMLPolicy = trustedTypes.createPolicy('myEscapePolicy', {
 });
 
 // Success because input is sanitized through a Trusted Type policy
-document.body.innerHTML += escapeHTMLPolicy.createHTML('<img src=x onerror=alert(1)>');
+document.body.innerHTML = escapeHTMLPolicy.createHTML('<img src=x onerror=alert(1)>');
 ```
 
 This surprisingly simple mechanism can help defeat DOM-based XSS, because we can ensure that all assignments to dangerous sinks go through sanitization. Which means as long as the sanitization in Trusted Type policies are solid, there won't be a DOM-based XSS.
