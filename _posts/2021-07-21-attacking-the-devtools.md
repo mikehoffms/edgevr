@@ -1,7 +1,7 @@
 ---
 title: Guest Blog Post - Attacking the DevTools
 author: David Erceg
-date: 2021-07-21 9:00:00 -7000
+date: 2021-07-21 9:00:00 -0700
 categories: [Vulnerabilities, Exploit]
 tags: [DevTools]
 math: true
