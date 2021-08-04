@@ -1,7 +1,7 @@
 ---
 title: Super Duper Secure Mode
 author: Johnathan Norman
-date: 2021-08-04 8:50:00 -7000
+date: 2021-08-04 8:50:00 -0700
 categories: [Vulnerabilities]
 tags: [JIT]
 math: true
