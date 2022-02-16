@@ -1,7 +1,7 @@
 ---
 title: Introducing Enhanced Security for Microsoft Edge
 author: Johnathan Norman
-date: 2022-02-15 8:50:00 -7000
+date: 2022-02-16 8:00:00 -0700
 categories: [Features]
 tags: [JIT]
 math: true
