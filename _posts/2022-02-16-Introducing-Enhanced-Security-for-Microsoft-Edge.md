@@ -35,7 +35,7 @@ site is in enhanced security mode. These additional mitigations prevent dynamic
 code generation in the renderer processes and implement a separate shadow stack
 to protect return addresses. Moreover, we are quite excited that Microsoft Edge
 now supports both forwards and backwards control-flow protection. By applying
-these protections, we can provide defense in depth that spans beyond JIT attacks
+these protections, we can provide defense in depth that spans beyond JIT attacks.
 
 [cig]: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide#code-integrity-guard
 [cfg]: https://docs.microsoft.com/en-us/windows/win32/secbp/control-flow-guard
