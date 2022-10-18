@@ -18,4 +18,5 @@ bundle exec htmlproofer $DEST \
   --disable-external \
   --check-html \
   --ignore_empty_alt \
+  --ignore_missing_alt \
   --ignore-urls $URL_IGNORE
