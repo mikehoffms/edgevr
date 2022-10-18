@@ -17,4 +17,4 @@ URL_IGNORE=cdn.jsdelivr.net
 bundle exec htmlproofer $DEST \
   --disable-external \
   --check-html \
-  --url_ignore $URL_IGNORE
+  --ignore-urls $URL_IGNORE
