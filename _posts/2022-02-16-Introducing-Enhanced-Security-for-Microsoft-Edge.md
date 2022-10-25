@@ -37,10 +37,10 @@ to protect return addresses. Moreover, we are quite excited that Microsoft Edge
 now supports both forwards and backwards control-flow protection. By applying
 these protections, we can provide defense in depth that spans beyond JIT attacks.
 
-[cig]: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide#code-integrity-guard
-[cfg]: https://docs.microsoft.com/en-us/windows/win32/secbp/control-flow-guard
+[cig]: https://learn.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide#code-integrity-guard
+[cfg]: https://learn.microsoft.com/windows/win32/secbp/control-flow-guard
 [cet]: https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html
-[acg]: https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide#arbitrary-code-guard
+[acg]: https://learn.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection-reference?view=o365-worldwide#arbitrary-code-guard
 
 ## Manual and Automatic Site bypass lists
 
@@ -79,7 +79,7 @@ enhancing your security on the web through its options to control this feature
 in the [documentation to Browse more safely with Microsoft
 Edge][documentation].
 
-[documentation]: https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-security-browse-safer
+[documentation]: https://learn.microsoft.com/DeployEdge/microsoft-edge-security-browse-safer
 
 ## Linux and Mac Support
 

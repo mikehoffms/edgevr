@@ -425,7 +425,7 @@ as an example.
 
 [asan-binaries]: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/asan.md#pre_built-chrome-binaries
 [ghidra]: https://ghidra-sre.org/
-[windbg]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools
+[windbg]: https://learn.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools
 
 ## Ghidra setup
 
@@ -611,7 +611,7 @@ debugging for any of the issues listed here, I did use it to investigate some
 more recent issues and it was essential in those cases. So, if you're using
 WinDbg to investigate an issue you've found, it's something to keep in mind.
 
-[time-travel-debugging]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/time-travel-debugging-overview
+[time-travel-debugging]: https://learn.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-overview
 
 # Conclusion
 

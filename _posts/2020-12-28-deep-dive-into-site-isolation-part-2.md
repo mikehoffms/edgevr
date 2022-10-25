@@ -72,7 +72,7 @@ With these bypasses, an attacker can bypass Site Isolation with the following st
 [This bug](https://bugs.chromium.org/p/chromium/issues/detail?id=971917) was fixed by adding appropriate checks in the browser process.
 
 # Finding bugs in Reader mode through a security review
-When Edge started building the [Reading View](https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/browser-features/reading-view) experience, we decided to use [DOM Distiller](https://chromium.googlesource.com/chromium/dom-distiller#dom-distiller) which powers Reader mode in Chrome. I was curious about how DOM Distiller is implemented, so I started testing it.
+When Edge started building the [Reading View](https://learn.microsoft.com/microsoft-edge/dev-guide/browser-features/reading-view) experience, we decided to use [DOM Distiller](https://chromium.googlesource.com/chromium/dom-distiller#dom-distiller) which powers Reader mode in Chrome. I was curious about how DOM Distiller is implemented, so I started testing it.
 
 Reader mode sanitizes HTML content from the site before rendering for good reading experience. While they tried to remove most of the dangerous tags (e.g. `script`, `style`, etc) many event handlers weren't properly sanitized (e.g. `<button onclick="alert(1)">`). And images and videos from the site could be rendered by design.
 

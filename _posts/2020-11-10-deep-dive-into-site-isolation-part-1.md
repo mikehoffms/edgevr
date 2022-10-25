@@ -117,11 +117,11 @@ X-Content-Type-Options: nosniff
 ```
 CORB should block such a cross-origin subresource, and therefore if the subresource was correctly loaded, that indicates a CORB bypass.
 
-If you have an idea where subresources can't be loaded (e.g. [CORB bypass](#corb-bypasses) via WebSocket above), try using [WinDbg](https://www.chromium.org/developers/how-tos/debugging-on-windows/windbg-help)'s [_!address_](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/-address#:~:text=Quotes%20in%20the%20command,for%20the%20string%20%22pad%22) command to find if the string you are looking for has actually entered into the renderer process by searching that string in a heap.
+If you have an idea where subresources can't be loaded (e.g. [CORB bypass](#corb-bypasses) via WebSocket above), try using [WinDbg](https://www.chromium.org/developers/how-tos/debugging-on-windows/windbg-help)'s [_!address_](https://learn.microsoft.com/windows-hardware/drivers/debugger/-address#:~:text=Quotes%20in%20the%20command,for%20the%20string%20%22pad%22) command to find if the string you are looking for has actually entered into the renderer process by searching that string in a heap.
 ```
 !address /f:Heap /c:"s -a %1 %2 \"secret\"" 
 ```
-This searches string _**secret**_ in heap memory of the renderer process. If you are looking for a unicode string instead of an ascii string, you can change _-a_ to _-u_ (more details in the [search memory](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/s--search-memory-) section).
+This searches string _**secret**_ in heap memory of the renderer process. If you are looking for a unicode string instead of an ascii string, you can change _-a_ to _-u_ (more details in the [search memory](https://learn.microsoft.com/windows-hardware/drivers/debugger/s--search-memory-) section).
 
 # What’s next?
 With Site Isolation, CORB, and CORP, we can mitigate many attacks from UXSS to Spectre along with many other client-side attacks, which allow an attacker to read cross-site information. However, there are attacks which can fully compromise a renderer process. The next part will focus on how Site Isolation was further tightened to mitigate such an attacker from obtaining cross-site information.

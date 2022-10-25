@@ -290,7 +290,7 @@ Browser bugs can be generally boiled down to two main types:
        `C:\Users\test\AppData\Local\Google\Chrome\User Data\Crashpad\reports`
        (for Chrome)
     2. Get
-       [windbg](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools)
+       [windbg](https://learn.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
        and open those crash dumps and just execute `!analyze -v`
     3. You can also get Chromium
        [ASAN](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html)

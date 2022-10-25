@@ -249,7 +249,7 @@ see it [here](https://bugs.chromium.org/p/chromium/issues/detail?id=1276331).
 The bug is due to `unmodifiedText` (line 11 in the last screenshot) was handled
 in the browser process without taking account of null termination which lead to
 a
-[heap buffer overflow](https://docs.microsoft.com/en-us/cpp/sanitizers/error-heap-buffer-overflow?view=msvc-170#example---classic-heap-buffer-overflow)
+[heap buffer overflow](https://learn.microsoft.com/cpp/sanitizers/error-heap-buffer-overflow?view=msvc-170#example---classic-heap-buffer-overflow)
 (read), as [caseq@](https://bugs.chromium.org/u/2585305731/) (assigned to this
 bug) mentions: “…That said, this may lead to us sending a piece of browser
 memory into renderer.”
