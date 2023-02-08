@@ -8,7 +8,7 @@
 
 set -eu
 
-gem env
+cat ./.bundle/config
 export PATH=/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.0/bin:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.0/gems:$PATH
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
