@@ -12,7 +12,7 @@ Although you can develop on Windows most of the scripts are written for linux an
 Install required packages 
 
 ```console
-$ sudo apt install ruby-dev coreutils fswatch zlib1g-dev build-essential 
+$ sudo apt install ruby-dev ruby-bundler coreutils fswatch zlib1g-dev build-essential 
 ````
 
 Install all the ruby stuff 
