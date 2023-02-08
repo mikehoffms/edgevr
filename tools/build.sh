@@ -10,9 +10,10 @@ set -eu
 
 #ls ./vendor/bundle/ruby/3.1.0/gems
 #PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0/gems
-#GEM_PATH=/home/runner/work/edgevr/edgevr/vendor/bundle
+GEM_PATH=/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0
+GEM_HOME=/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0
 
-JEKYLL_ENV=production bundle exec jekyll b -b "" -d /home/runner/work/edgevr/edgevr/_site
+#JEKYLL_ENV=production bundle exec jekyll b -b "" -d /home/runner/work/edgevr/edgevr/_site
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
