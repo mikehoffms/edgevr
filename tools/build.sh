@@ -8,7 +8,8 @@
 
 set -eu
 
-export PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0/gems
+ls /home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.7/gems
+export PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.7/gems
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
