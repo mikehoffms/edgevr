@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">=4.3.2"
+gem "jekyll", "==3.8.6"
 
 # Official Plugins , tzinfo needed by Windows
 group :jekyll_plugins do
