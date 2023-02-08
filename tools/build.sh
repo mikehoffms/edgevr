@@ -8,6 +8,10 @@
 
 set -eu
 
+ gem install -h
+ ls /var/lib/gems/
+ ls /var/lib/gems/3.0.0/gems/
+
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
 WORK_DIR=$(dirname $(dirname $(realpath "$0")))
