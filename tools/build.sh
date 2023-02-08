@@ -8,8 +8,6 @@
 
 set -eu
 
-PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0/gems
-
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
 WORK_DIR=$(dirname $(dirname $(realpath "$0")))
@@ -58,7 +56,7 @@ _build() {
 
   CMD+=" -d ${DEST}"
   echo "\$ $CMD"
-  eval $(bundle exec jekyll b -b "" -d "/home/runner/work/edgevr/edgevr/_site")
+  eval $CMD
   echo -e "\nBuild success, the site files have been placed in '${DEST}'."
 
   if [[ -d ${DEST}/.git ]]; then
