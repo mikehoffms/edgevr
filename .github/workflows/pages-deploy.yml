@@ -36,14 +36,8 @@ jobs:
           bundle config path vendor/bundle
 
       - name: Bundle Install
-        if: steps.bundle-cache.outputs.cache-hit != 'true'
         run: |
           bundle install
-
-      - name: Bundle Install locally
-        if: steps.bundle-cache.outputs.cache-hit == 'true'
-        run: |
-          bundle install --local
 
       - name: Build Site
         run: |
@@ -81,14 +75,8 @@ jobs:
           bundle config path vendor/bundle
 
       - name: Bundle Install
-        if: steps.bundle-cache.outputs.cache-hit != 'true'
         run: |
           bundle install
-
-      - name: Bundle Install locally
-        if: steps.bundle-cache.outputs.cache-hit == 'true'
-        run: |
-          bundle install --local
 
       - name: Build site
         run: |
