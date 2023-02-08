@@ -8,7 +8,7 @@
 
 set -eu
 
-ls ./vendor/bundle/ruby/gems
+ls ./vendor/bundle/ruby/3.1.0/
 ls /opt/hostedtoolcache/Ruby/3.1.3/x64/lib/ruby/gems/3.1.0/gems
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
