@@ -8,9 +8,7 @@
 
 set -eu
 
- gem install -h
- ls /var/lib/gems/
- ls /var/lib/gems/3.0.0/gems/
+ls /opt/hostedtoolcache/Ruby/3.1.3/x64/lib/ruby/gems/3.1.0
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
