@@ -10,7 +10,7 @@ set -eu
 
 gem env
 find . -name "*jekyll*"
-export PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.0/gems
+export PATH=/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/2.7.0/gems:$PATH
 
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
