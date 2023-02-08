@@ -58,7 +58,7 @@ _build() {
 
   CMD+=" -d ${DEST}"
   echo "\$ $CMD"
-  eval $CMD
+  eval $(bundle exec jekyll b -b "" -d "/home/runner/work/edgevr/edgevr/_site")
   echo -e "\nBuild success, the site files have been placed in '${DEST}'."
 
   if [[ -d ${DEST}/.git ]]; then
