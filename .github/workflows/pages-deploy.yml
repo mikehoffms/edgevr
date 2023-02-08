@@ -66,9 +66,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Bundle config
-        run: |
-          bundle config path vendor/bundle
+      #- name: Bundle config
+      #  run: |
+      #    bundle config path vendor/bundle
 
       - name: Bundle Install
         run: |
