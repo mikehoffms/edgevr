@@ -8,6 +8,8 @@
 
 set -eu
 
+PATH=$PATH:/home/runner/work/edgevr/edgevr/vendor/bundle/ruby/3.1.0/gems
+
 CMD="JEKYLL_ENV=production bundle exec jekyll b"
 
 WORK_DIR=$(dirname $(dirname $(realpath "$0")))
